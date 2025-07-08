@@ -24,7 +24,7 @@ I build web and mobile applications with experience in full stack development, A
 
 ## 📫 How to Reach Me
 
-- Twitter: [@PixelNiladri](https://x.com/PixelNiladri)
+- Twitter: [@PixelNiladri](https://x.com/byteHumi)
 - LinkedIn: [Niladri Hazra](https://linkedin.com/in/niladri-hazra-b573282a7)
 - LeetCode: [niladrivit](https://www.leetcode.com/niladrivit)
 - Portfolio: [Niladri Hazra](https://www.niladri.tech)
