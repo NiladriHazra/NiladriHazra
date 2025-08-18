@@ -1,7 +1,7 @@
 # Niladri Hazra
 
 [![Profile Views](https://komarev.com/ghpvc/?username=niladrihazra&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/niladrihazra)
-[![Twitter: PixelNiladri](https://img.shields.io/twitter/follow/PixelNiladri?style=social)](https://x.com/PixelNiladri)
+[![Twitter: PixelNiladri](https://img.shields.io/twitter/follow/byteHumi?style=social)](https://x.com/byteHumi)
 [![Linkedin: Niladri Hazra](https://img.shields.io/badge/-NiladriHazra-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://linkedin.com/in/niladri-hazra-b573282a7)](https://linkedin.com/in/niladri-hazra-b573282a7)
 [![LeetCode: niladrivit](https://img.shields.io/badge/-LeetCode-FFA116?style=flat-square&logo=LeetCode&logoColor=white&link=https://www.leetcode.com/niladrivit)](https://www.leetcode.com/niladrivit)
 
