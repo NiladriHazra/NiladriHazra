@@ -7,12 +7,12 @@
 
 ## 👨‍💻 About Me
 
-I build web and mobile applications with experience in full stack development, Android, and Web3. I'm also actively learning machine learning to expand my skill set.
+I build web and mobile applications with experience in full stack development. I'm also actively learning machine learning to expand my skill set.
 
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=niladrihazra&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/>
+<!--   <img width="48%" src="https://github-readme-stats.vercel.app/api?username=niladrihazra&show_icons=true&theme=radical&include_all_commits=true&count_private=true"/> -->
   <img width="48%" src="https://github-readme-streak-stats.herokuapp.com/?user=niladrihazra&theme=radical"/>
 </p>
 
