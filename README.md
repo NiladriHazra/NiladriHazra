@@ -34,68 +34,8 @@ For model work I use OpenAI, Anthropic, Google, Bedrock, or Vertex. For integrat
 ### GitHub signal
 
 <!-- signal:start -->
-<table width="100%">
-  <tr>
-    <td width="38%" valign="top">
-      <h4>Signal</h4>
-      <table width="100%">
-      <tr>
-        <td><sub>public stars</sub></td>
-        <td align="right"><strong>1,098</strong></td>
-      </tr>
-      <tr>
-        <td><sub>own repos</sub></td>
-        <td align="right"><strong>30</strong></td>
-      </tr>
-      <tr>
-        <td><sub>public PRs</sub></td>
-        <td align="right"><strong>37</strong></td>
-      </tr>
-      <tr>
-        <td><sub>total forks</sub></td>
-        <td align="right"><strong>218</strong></td>
-      </tr>
-      <tr>
-        <td><sub>top repo</sub></td>
-        <td align="right"><strong><a href="https://github.com/NiladriHazra/Open-Fiesta">Open-Fiesta</a></strong></td>
-      </tr>
-      </table>
-    </td>
-    <td width="62%" valign="top">
-      <h4>Repos with traction</h4>
-    <table width="100%">
-      <tr>
-        <th align="left">repo</th>
-        <th align="right">stars</th>
-        <th align="right">forks</th>
-        <th align="left">stack</th>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/NiladriHazra/Open-Fiesta">Open-Fiesta</a></td>
-        <td align="right"><strong>963</strong></td>
-        <td align="right">191</td>
-        <td>TypeScript</td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/NiladriHazra/WhatToBuild">WhatToBuild</a></td>
-        <td align="right"><strong>75</strong></td>
-        <td align="right">13</td>
-        <td>TypeScript</td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/NiladriHazra/Slop-Detect">Slop-Detect</a></td>
-        <td align="right"><strong>11</strong></td>
-        <td align="right">0</td>
-        <td>JavaScript</td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/NiladriHazra/clean-image">clean-image</a></td>
-        <td align="right"><strong>8</strong></td>
-        <td align="right">0</td>
-        <td>TypeScript</td>
-      </tr>
-    </table>
-    </td>
-  </tr>
-</table>
+<picture>
+  <source media="(max-width: 700px)" srcset="./assets/profile-signal-mobile.svg" />
+  <img src="./assets/profile-signal.svg" alt="GitHub signal: public stars, pull requests, forks, and top repositories" width="100%" />
+</picture>
 <!-- signal:end -->

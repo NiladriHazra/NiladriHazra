@@ -27,10 +27,10 @@ jobs:
           GITHUB_USERNAME: ${{ github.repository_owner }}
       - name: commit changes
         run: |
-          if ! git diff --quiet README.md; then
+          if ! git diff --quiet README.md assets/profile-signal.svg assets/profile-signal-mobile.svg; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add README.md
+            git add README.md assets/profile-signal.svg assets/profile-signal-mobile.svg
             git commit -m "chore: update profile signal"
             git push
           fi

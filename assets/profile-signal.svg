@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="340" viewBox="0 0 980 340" role="img" aria-labelledby="title desc">
+  <title id="title">NiladriHazra GitHub signal</title>
+  <desc id="desc">Public GitHub stats and top repositories generated from the GitHub API.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="54%" stop-color="#111820"/>
+      <stop offset="100%" stop-color="#0b1015"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0b75e"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="soft" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#010409" flood-opacity="0.30"/>
+    </filter>
+  </defs>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+  </style>
+
+  <rect width="980" height="340" rx="8" fill="url(#panel)"/>
+  <rect x="1" y="1" width="978" height="338" rx="8" fill="none" stroke="#30363d"/>
+  <rect x="26" y="27" width="928" height="286" rx="8" fill="#0d1117" stroke="#25303a" filter="url(#soft)"/>
+  <rect x="26" y="27" width="928" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <text x="52" y="70" fill="#f0f6fc" font-size="24" font-weight="750">GitHub signal</text>
+  <text x="52" y="96" fill="#8ea3b0" font-size="13">public repos, stars, forks, and PRs</text>
+  <text x="928" y="70" text-anchor="end" fill="#8ea3b0" font-size="13">generated from GitHub API</text>
+
+  
+    <rect x="52" y="126" width="148" height="74" rx="8" fill="#111820" stroke="#27313b"/>
+    <rect x="52" y="126" width="4" height="74" rx="2" fill="#f0b75e"/>
+    <text x="70" y="154" fill="#8ea3b0" font-size="13">public stars</text>
+    <text x="70" y="182" fill="#f0f6fc" font-size="26" font-weight="700">1.1K</text>
+  
+  
+    <rect x="216" y="126" width="148" height="74" rx="8" fill="#111820" stroke="#27313b"/>
+    <rect x="216" y="126" width="4" height="74" rx="2" fill="#58a6ff"/>
+    <text x="234" y="154" fill="#8ea3b0" font-size="13">public PRs</text>
+    <text x="234" y="182" fill="#f0f6fc" font-size="26" font-weight="700">37</text>
+  
+  
+    <rect x="52" y="214" width="148" height="74" rx="8" fill="#111820" stroke="#27313b"/>
+    <rect x="52" y="214" width="4" height="74" rx="2" fill="#7dd3fc"/>
+    <text x="70" y="242" fill="#8ea3b0" font-size="13">own repos</text>
+    <text x="70" y="270" fill="#f0f6fc" font-size="26" font-weight="700">30</text>
+  
+  
+    <rect x="216" y="214" width="148" height="74" rx="8" fill="#111820" stroke="#27313b"/>
+    <rect x="216" y="214" width="4" height="74" rx="2" fill="#c084fc"/>
+    <text x="234" y="242" fill="#8ea3b0" font-size="13">total forks</text>
+    <text x="234" y="270" fill="#f0f6fc" font-size="26" font-weight="700">218</text>
+  
+
+  <rect x="52" y="106" width="316" height="1" fill="#27313b"/>
+  <text x="52" y="304" fill="#8ea3b0" font-size="13">top repo</text>
+  <text x="114" y="304" fill="#58a6ff" font-size="14" font-weight="700">Open-Fiesta</text>
+  <text x="928" y="96" text-anchor="end" fill="#8ea3b0" font-size="13">stars / forks / stack</text>
+  <text x="458" y="112" fill="#f0f6fc" font-size="19" font-weight="750">Repos with traction</text>
+  <text x="690" y="112" text-anchor="end" fill="#8ea3b0" font-size="12">stars</text>
+  <text x="770" y="112" text-anchor="end" fill="#8ea3b0" font-size="12">forks</text>
+  <text x="820" y="112" fill="#8ea3b0" font-size="12">stack</text>
+
+  
+    <rect x="458" y="128" width="470" height="42" rx="6" fill="#10161d" stroke="#25303a"/>
+    <text x="478" y="154" fill="#58a6ff" font-size="15" font-weight="650">Open-Fiesta</text>
+    <text x="690" y="154" text-anchor="end" fill="#f0b75e" font-size="15" font-weight="700">963</text>
+    <text x="770" y="154" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">191</text>
+    <text x="820" y="154" fill="#c9d1d9" font-size="14">TypeScript</text>
+  
+
+    <rect x="458" y="171" width="470" height="42" rx="6" fill="#0d1117" stroke="#25303a"/>
+    <text x="478" y="197" fill="#58a6ff" font-size="15" font-weight="650">WhatToBuild</text>
+    <text x="690" y="197" text-anchor="end" fill="#f0b75e" font-size="15" font-weight="700">75</text>
+    <text x="770" y="197" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">13</text>
+    <text x="820" y="197" fill="#c9d1d9" font-size="14">TypeScript</text>
+  
+
+    <rect x="458" y="214" width="470" height="42" rx="6" fill="#10161d" stroke="#25303a"/>
+    <text x="478" y="240" fill="#58a6ff" font-size="15" font-weight="650">Slop-Detect</text>
+    <text x="690" y="240" text-anchor="end" fill="#f0b75e" font-size="15" font-weight="700">11</text>
+    <text x="770" y="240" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">0</text>
+    <text x="820" y="240" fill="#c9d1d9" font-size="14">JavaScript</text>
+  
+
+    <rect x="458" y="257" width="470" height="42" rx="6" fill="#0d1117" stroke="#25303a"/>
+    <text x="478" y="283" fill="#58a6ff" font-size="15" font-weight="650">clean-image</text>
+    <text x="690" y="283" text-anchor="end" fill="#f0b75e" font-size="15" font-weight="700">8</text>
+    <text x="770" y="283" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">0</text>
+    <text x="820" y="283" fill="#c9d1d9" font-size="14">TypeScript</text>
+  
+</svg>
