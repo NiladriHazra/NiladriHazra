@@ -87,26 +87,25 @@ async function pullRequestCount() {
   return result.total_count || 0;
 }
 
-function metricCard({ x, y, label, value, accent, width = 148 }) {
+function metricCard({ x, y, label, value, width = 148 }) {
   return `
-    <rect x="${x}" y="${y}" width="${width}" height="74" rx="8" fill="#111820" stroke="#27313b"/>
-    <rect x="${x}" y="${y}" width="4" height="74" rx="2" fill="${accent}"/>
-    <text x="${x + 18}" y="${y + 28}" fill="#8ea3b0" font-size="13">${escapeHtml(label)}</text>
-    <text x="${x + 18}" y="${y + 56}" fill="#f0f6fc" font-size="26" font-weight="700">${escapeHtml(value)}</text>
+    <rect x="${x}" y="${y}" width="${width}" height="74" rx="6" fill="#161b22" stroke="#30363d"/>
+    <text x="${x + 18}" y="${y + 28}" fill="#8b949e" font-size="13">${escapeHtml(label)}</text>
+    <text x="${x + 18}" y="${y + 56}" fill="#f0f6fc" font-size="25" font-weight="700">${escapeHtml(value)}</text>
   `;
 }
 
 function repoRow(repo, index) {
   const y = 128 + index * 43;
-  const rowFill = index % 2 === 0 ? "#10161d" : "#0d1117";
+  const rowFill = index % 2 === 0 ? "#161b22" : "#0d1117";
   const language = repo.language || "Mixed";
 
   return `
-    <rect x="458" y="${y}" width="470" height="42" rx="6" fill="${rowFill}" stroke="#25303a"/>
-    <text x="478" y="${y + 26}" fill="#58a6ff" font-size="15" font-weight="650">${escapeHtml(repo.name)}</text>
-    <text x="690" y="${y + 26}" text-anchor="end" fill="#f0b75e" font-size="15" font-weight="700">${formatNumber(repo.stargazers_count)}</text>
+    <rect x="458" y="${y}" width="470" height="42" rx="6" fill="${rowFill}" stroke="#30363d"/>
+    <text x="478" y="${y + 26}" fill="#f0f6fc" font-size="15" font-weight="650">${escapeHtml(repo.name)}</text>
+    <text x="690" y="${y + 26}" text-anchor="end" fill="#f0f6fc" font-size="15" font-weight="700">${formatNumber(repo.stargazers_count)}</text>
     <text x="770" y="${y + 26}" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">${formatNumber(repo.forks_count)}</text>
-    <text x="820" y="${y + 26}" fill="#c9d1d9" font-size="14">${escapeHtml(language)}</text>
+    <text x="820" y="${y + 26}" fill="#8b949e" font-size="14">${escapeHtml(language)}</text>
   `;
 }
 
@@ -120,47 +119,30 @@ function renderSignalSvg(repos, prs) {
 <svg xmlns="http://www.w3.org/2000/svg" width="980" height="340" viewBox="0 0 980 340" role="img" aria-labelledby="title desc">
   <title id="title">${username} GitHub signal</title>
   <desc id="desc">Public GitHub stats and top repositories generated from the GitHub API.</desc>
-  <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="54%" stop-color="#111820"/>
-      <stop offset="100%" stop-color="#0b1015"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f0b75e"/>
-      <stop offset="50%" stop-color="#58a6ff"/>
-      <stop offset="100%" stop-color="#c084fc"/>
-    </linearGradient>
-    <filter id="soft" x="-5%" y="-5%" width="110%" height="110%">
-      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#010409" flood-opacity="0.30"/>
-    </filter>
-  </defs>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
   </style>
 
-  <rect width="980" height="340" rx="8" fill="url(#panel)"/>
+  <rect width="980" height="340" rx="8" fill="#0d1117"/>
   <rect x="1" y="1" width="978" height="338" rx="8" fill="none" stroke="#30363d"/>
-  <rect x="26" y="27" width="928" height="286" rx="8" fill="#0d1117" stroke="#25303a" filter="url(#soft)"/>
-  <rect x="26" y="27" width="928" height="3" rx="1.5" fill="url(#accent)"/>
+  <rect x="26" y="27" width="928" height="286" rx="8" fill="#0d1117" stroke="#30363d"/>
+  <rect x="52" y="106" width="316" height="1" fill="#30363d"/>
 
-  <text x="52" y="70" fill="#f0f6fc" font-size="24" font-weight="750">GitHub signal</text>
-  <text x="52" y="96" fill="#8ea3b0" font-size="13">public repos, stars, forks, and PRs</text>
-  <text x="928" y="70" text-anchor="end" fill="#8ea3b0" font-size="13">generated from GitHub API</text>
+  <text x="52" y="70" fill="#f0f6fc" font-size="24" font-weight="750">Overview</text>
+  <text x="52" y="96" fill="#8b949e" font-size="13">public repos, stars, forks, and PRs</text>
 
-  ${metricCard({ x: 52, y: 126, label: "public stars", value: compactNumber(totalStars), accent: "#f0b75e" })}
-  ${metricCard({ x: 216, y: 126, label: "public PRs", value: formatNumber(prs), accent: "#58a6ff" })}
-  ${metricCard({ x: 52, y: 214, label: "own repos", value: formatNumber(repos.length), accent: "#7dd3fc" })}
-  ${metricCard({ x: 216, y: 214, label: "total forks", value: formatNumber(totalForks), accent: "#c084fc" })}
+  ${metricCard({ x: 52, y: 126, label: "public stars", value: compactNumber(totalStars) })}
+  ${metricCard({ x: 216, y: 126, label: "public PRs", value: formatNumber(prs) })}
+  ${metricCard({ x: 52, y: 214, label: "own repos", value: formatNumber(repos.length) })}
+  ${metricCard({ x: 216, y: 214, label: "total forks", value: formatNumber(totalForks) })}
 
-  <rect x="52" y="106" width="316" height="1" fill="#27313b"/>
-  <text x="52" y="304" fill="#8ea3b0" font-size="13">top repo</text>
-  <text x="114" y="304" fill="#58a6ff" font-size="14" font-weight="700">${escapeHtml(topRepo.name)}</text>
-  <text x="928" y="96" text-anchor="end" fill="#8ea3b0" font-size="13">stars / forks / stack</text>
+  <text x="52" y="304" fill="#8b949e" font-size="13">top repo</text>
+  <text x="114" y="304" fill="#f0f6fc" font-size="14" font-weight="700">${escapeHtml(topRepo.name)}</text>
+  <text x="928" y="96" text-anchor="end" fill="#8b949e" font-size="13">stars / forks / stack</text>
   <text x="458" y="112" fill="#f0f6fc" font-size="19" font-weight="750">Repos with traction</text>
-  <text x="690" y="112" text-anchor="end" fill="#8ea3b0" font-size="12">stars</text>
-  <text x="770" y="112" text-anchor="end" fill="#8ea3b0" font-size="12">forks</text>
-  <text x="820" y="112" fill="#8ea3b0" font-size="12">stack</text>
+  <text x="690" y="112" text-anchor="end" fill="#8b949e" font-size="12">stars</text>
+  <text x="770" y="112" text-anchor="end" fill="#8b949e" font-size="12">forks</text>
+  <text x="820" y="112" fill="#8b949e" font-size="12">stack</text>
 
   ${topFour.map(repoRow).join("\n")}
 </svg>
@@ -177,53 +159,40 @@ function renderSignalMobileSvg(repos, prs) {
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="660" viewBox="0 0 640 660" role="img" aria-labelledby="title desc">
   <title id="title">${username} GitHub signal mobile</title>
   <desc id="desc">Public GitHub stats and top repositories generated from the GitHub API.</desc>
-  <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d1117"/>
-      <stop offset="58%" stop-color="#111820"/>
-      <stop offset="100%" stop-color="#0b1015"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#f0b75e"/>
-      <stop offset="50%" stop-color="#58a6ff"/>
-      <stop offset="100%" stop-color="#c084fc"/>
-    </linearGradient>
-  </defs>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
   </style>
 
-  <rect width="640" height="660" rx="8" fill="url(#panel)"/>
+  <rect width="640" height="660" rx="8" fill="#0d1117"/>
   <rect x="1" y="1" width="638" height="658" rx="8" fill="none" stroke="#30363d"/>
-  <rect x="28" y="30" width="584" height="600" rx="8" fill="#0d1117" stroke="#25303a"/>
-  <rect x="28" y="30" width="584" height="3" rx="1.5" fill="url(#accent)"/>
+  <rect x="28" y="30" width="584" height="600" rx="8" fill="#0d1117" stroke="#30363d"/>
 
-  <text x="52" y="74" fill="#f0f6fc" font-size="26" font-weight="750">GitHub signal</text>
-  <text x="52" y="102" fill="#8ea3b0" font-size="14">public repos, stars, forks, and PRs</text>
-  <rect x="52" y="118" width="536" height="1" fill="#27313b"/>
+  <text x="52" y="74" fill="#f0f6fc" font-size="26" font-weight="750">Overview</text>
+  <text x="52" y="102" fill="#8b949e" font-size="14">public repos, stars, forks, and PRs</text>
+  <rect x="52" y="118" width="536" height="1" fill="#30363d"/>
 
-  ${metricCard({ x: 52, y: 146, label: "public stars", value: compactNumber(totalStars), accent: "#f0b75e", width: 250 })}
-  ${metricCard({ x: 338, y: 146, label: "public PRs", value: formatNumber(prs), accent: "#58a6ff", width: 250 })}
-  ${metricCard({ x: 52, y: 234, label: "own repos", value: formatNumber(repos.length), accent: "#7dd3fc", width: 250 })}
-  ${metricCard({ x: 338, y: 234, label: "total forks", value: formatNumber(totalForks), accent: "#c084fc", width: 250 })}
+  ${metricCard({ x: 52, y: 146, label: "public stars", value: compactNumber(totalStars), width: 250 })}
+  ${metricCard({ x: 338, y: 146, label: "public PRs", value: formatNumber(prs), width: 250 })}
+  ${metricCard({ x: 52, y: 234, label: "own repos", value: formatNumber(repos.length), width: 250 })}
+  ${metricCard({ x: 338, y: 234, label: "total forks", value: formatNumber(totalForks), width: 250 })}
 
-  <text x="52" y="344" fill="#8ea3b0" font-size="14">top repo</text>
-  <text x="124" y="344" fill="#58a6ff" font-size="15" font-weight="700">${escapeHtml(topRepo.name)}</text>
+  <text x="52" y="344" fill="#8b949e" font-size="14">top repo</text>
+  <text x="124" y="344" fill="#f0f6fc" font-size="15" font-weight="700">${escapeHtml(topRepo.name)}</text>
 
   <text x="52" y="394" fill="#f0f6fc" font-size="21" font-weight="750">Repos with traction</text>
-  <text x="400" y="394" text-anchor="end" fill="#8ea3b0" font-size="12">stars</text>
-  <text x="474" y="394" text-anchor="end" fill="#8ea3b0" font-size="12">forks</text>
-  <text x="520" y="394" fill="#8ea3b0" font-size="12">stack</text>
+  <text x="400" y="394" text-anchor="end" fill="#8b949e" font-size="12">stars</text>
+  <text x="474" y="394" text-anchor="end" fill="#8b949e" font-size="12">forks</text>
+  <text x="520" y="394" fill="#8b949e" font-size="12">stack</text>
 
   ${topFour.map((repo, index) => {
     const y = 412 + index * 48;
-    const rowFill = index % 2 === 0 ? "#10161d" : "#0d1117";
+    const rowFill = index % 2 === 0 ? "#161b22" : "#0d1117";
     return `
-  <rect x="52" y="${y}" width="536" height="44" rx="6" fill="${rowFill}" stroke="#25303a"/>
-  <text x="72" y="${y + 28}" fill="#58a6ff" font-size="15" font-weight="650">${escapeHtml(repo.name)}</text>
-  <text x="400" y="${y + 28}" text-anchor="end" fill="#f0b75e" font-size="15" font-weight="700">${formatNumber(repo.stargazers_count)}</text>
+  <rect x="52" y="${y}" width="536" height="44" rx="6" fill="${rowFill}" stroke="#30363d"/>
+  <text x="72" y="${y + 28}" fill="#f0f6fc" font-size="15" font-weight="650">${escapeHtml(repo.name)}</text>
+  <text x="400" y="${y + 28}" text-anchor="end" fill="#f0f6fc" font-size="15" font-weight="700">${formatNumber(repo.stargazers_count)}</text>
   <text x="474" y="${y + 28}" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">${formatNumber(repo.forks_count)}</text>
-  <text x="520" y="${y + 28}" fill="#c9d1d9" font-size="14">${escapeHtml(repo.language || "Mixed")}</text>`;
+  <text x="520" y="${y + 28}" fill="#8b949e" font-size="14">${escapeHtml(repo.language || "Mixed")}</text>`;
   }).join("\n")}
 </svg>
 `;
