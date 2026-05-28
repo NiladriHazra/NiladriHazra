@@ -33,28 +33,69 @@ For model work I use OpenAI, Anthropic, Google, Bedrock, or Vertex. For integrat
 
 ### GitHub signal
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NiladriHazra&theme=github_dark" alt="Niladri Hazra GitHub stats" height="175" />
-</p>
-
-#### Repos with traction
-
-<!-- repos:start -->
-| repo | signal | stack |
-| --- | --- | --- |
-| [Open-Fiesta](https://github.com/NiladriHazra/Open-Fiesta) | ![stars](https://img.shields.io/github/stars/NiladriHazra/Open-Fiesta?style=flat&label=stars&color=f0b75e) ![forks](https://img.shields.io/github/forks/NiladriHazra/Open-Fiesta?style=flat&label=forks&color=8ea3b0) | TypeScript |
-| [WhatToBuild](https://github.com/NiladriHazra/WhatToBuild) | ![stars](https://img.shields.io/github/stars/NiladriHazra/WhatToBuild?style=flat&label=stars&color=f0b75e) ![forks](https://img.shields.io/github/forks/NiladriHazra/WhatToBuild?style=flat&label=forks&color=8ea3b0) | TypeScript |
-| [Slop-Detect](https://github.com/NiladriHazra/Slop-Detect) | ![stars](https://img.shields.io/github/stars/NiladriHazra/Slop-Detect?style=flat&label=stars&color=f0b75e) ![forks](https://img.shields.io/github/forks/NiladriHazra/Slop-Detect?style=flat&label=forks&color=8ea3b0) | JavaScript |
-| [clean-image](https://github.com/NiladriHazra/clean-image) | ![stars](https://img.shields.io/github/stars/NiladriHazra/clean-image?style=flat&label=stars&color=f0b75e) ![forks](https://img.shields.io/github/forks/NiladriHazra/clean-image?style=flat&label=forks&color=8ea3b0) | TypeScript |
-<!-- repos:end -->
-
-#### Recent work
-
-<!-- activity:start -->
-- PR: [refactor: extract MasterModelCard from CarouselStepConfig](https://github.com/nishit-27/ai-ugc/pull/31) in `nishit-27/ai-ugc`
-- PR: [refactor: move flattenPerSceneResults into carouselStepHelpers](https://github.com/nishit-27/ai-ugc/pull/30) in `nishit-27/ai-ugc`
-- PR: [refactor: extract CarouselOrderList + CarouselCoverPicker](https://github.com/nishit-27/ai-ugc/pull/29) in `nishit-27/ai-ugc`
-- Commit: [refactor: extract MasterModelCard from CarouselStepConfig (#31)](https://github.com/nishit-27/ai-ugc/commit/895b721c677f3a7ac17297fae08457dc03ebc47d) in `nishit-27/ai-ugc`
-- Commit: [refactor: move flattenPerSceneResults into carouselStepHelpers (#30)](https://github.com/nishit-27/ai-ugc/commit/e394a2c92766d67e63dc2a4b485518daacbc0c94) in `nishit-27/ai-ugc`
-- Commit: [refactor: extract CarouselOrderList + CarouselCoverPicker (#29)](https://github.com/nishit-27/ai-ugc/commit/0f048d64393e4d2bba9cdc2b6f4dd2d29fe5d752) in `nishit-27/ai-ugc`
-<!-- activity:end -->
+<!-- signal:start -->
+<table width="100%">
+  <tr>
+    <td width="38%" valign="top">
+      <h4>Signal</h4>
+      <table width="100%">
+      <tr>
+        <td><sub>public stars</sub></td>
+        <td align="right"><strong>1,098</strong></td>
+      </tr>
+      <tr>
+        <td><sub>own repos</sub></td>
+        <td align="right"><strong>30</strong></td>
+      </tr>
+      <tr>
+        <td><sub>public PRs</sub></td>
+        <td align="right"><strong>37</strong></td>
+      </tr>
+      <tr>
+        <td><sub>total forks</sub></td>
+        <td align="right"><strong>218</strong></td>
+      </tr>
+      <tr>
+        <td><sub>top repo</sub></td>
+        <td align="right"><strong><a href="https://github.com/NiladriHazra/Open-Fiesta">Open-Fiesta</a></strong></td>
+      </tr>
+      </table>
+    </td>
+    <td width="62%" valign="top">
+      <h4>Repos with traction</h4>
+    <table width="100%">
+      <tr>
+        <th align="left">repo</th>
+        <th align="right">stars</th>
+        <th align="right">forks</th>
+        <th align="left">stack</th>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/NiladriHazra/Open-Fiesta">Open-Fiesta</a></td>
+        <td align="right"><strong>963</strong></td>
+        <td align="right">191</td>
+        <td>TypeScript</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/NiladriHazra/WhatToBuild">WhatToBuild</a></td>
+        <td align="right"><strong>75</strong></td>
+        <td align="right">13</td>
+        <td>TypeScript</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/NiladriHazra/Slop-Detect">Slop-Detect</a></td>
+        <td align="right"><strong>11</strong></td>
+        <td align="right">0</td>
+        <td>JavaScript</td>
+      </tr>
+      <tr>
+        <td><a href="https://github.com/NiladriHazra/clean-image">clean-image</a></td>
+        <td align="right"><strong>8</strong></td>
+        <td align="right">0</td>
+        <td>TypeScript</td>
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+<!-- signal:end -->
