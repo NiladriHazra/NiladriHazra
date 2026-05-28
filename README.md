@@ -1,11 +1,9 @@
-<p align="center">
-  <img src="./assets/readme-hero.png" alt="Rainy moonlit Japanese shrine path with subtle engineering details" width="100%" />
-</p>
+
 
 <h1 align="center">Niladri Hazra</h1>
 
 <p align="center">
-  <b>Full-stack and mobile engineer.</b><br />
+
   I build product surfaces, backend systems, and AI-agent workflows that are meant to hold up in real use.
 </p>
 
@@ -42,5 +40,5 @@ For model work I use OpenAI, Anthropic, Google, Bedrock, or Vertex. For integrat
 <p align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NiladriHazra&theme=github_dark" alt="Niladri Hazra GitHub profile details" width="100%" />
   <br />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NiladriHazra&theme=github_dark" alt="Niladri Hazra GitHub stats" height="175" />
+
 </p>
