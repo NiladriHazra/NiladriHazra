@@ -32,7 +32,7 @@
   
     <rect x="338" y="234" width="250" height="74" rx="6" fill="#161b22" stroke="#30363d"/>
     <text x="356" y="262" fill="#8b949e" font-size="13">total forks</text>
-    <text x="356" y="290" fill="#f0f6fc" font-size="25" font-weight="700">216</text>
+    <text x="356" y="290" fill="#f0f6fc" font-size="25" font-weight="700">215</text>
   
 
   <text x="52" y="344" fill="#8b949e" font-size="14">top repo</text>
@@ -53,7 +53,7 @@
   <rect x="52" y="460" width="536" height="44" rx="6" fill="#0d1117" stroke="#30363d"/>
   <text x="72" y="488" fill="#f0f6fc" font-size="15" font-weight="650">WhatToBuild</text>
   <text x="400" y="488" text-anchor="end" fill="#f0f6fc" font-size="15" font-weight="700">75</text>
-  <text x="474" y="488" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">12</text>
+  <text x="474" y="488" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">11</text>
   <text x="520" y="488" fill="#8b949e" font-size="14">TypeScript</text>
 
   <rect x="52" y="508" width="536" height="44" rx="6" fill="#161b22" stroke="#30363d"/>
