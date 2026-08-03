@@ -46,7 +46,7 @@
   
     <rect x="458" y="128" width="470" height="42" rx="6" fill="#161b22" stroke="#30363d"/>
     <text x="478" y="154" fill="#f0f6fc" font-size="15" font-weight="650">Open-Fiesta</text>
-    <text x="690" y="154" text-anchor="end" fill="#f0f6fc" font-size="15" font-weight="700">961</text>
+    <text x="690" y="154" text-anchor="end" fill="#f0f6fc" font-size="15" font-weight="700">962</text>
     <text x="770" y="154" text-anchor="end" fill="#c9d1d9" font-size="15" font-weight="650">191</text>
     <text x="820" y="154" fill="#8b949e" font-size="14">TypeScript</text>
   
