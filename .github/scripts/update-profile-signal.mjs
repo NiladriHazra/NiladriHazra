@@ -26,7 +26,8 @@ const stars = owned.reduce((sum, repo) => sum + repo.stargazers_count, 0);
 const forks = owned.reduce((sum, repo) => sum + repo.forks_count, 0);
 const rows = [
   ['Role', 'Full-stack & mobile engineer'],
-  ['Location', 'Kolkata, India'],
+  ['Location', 'Bangalore, India'],
+  ['Currently at', 'Runable · runable.com'],
   ['Focus', 'Products, systems, AI agents'],
   null,
   ['Languages', 'TypeScript, JavaScript, SQL'],
@@ -52,7 +53,7 @@ const rows = [
 ];
 function render(mobile = false) {
   const width = mobile ? 640 : 1120;
-  const height = mobile ? 1150 : 610;
+  const height = mobile ? 1171 : 631;
   const left = mobile ? 38 : 454;
   const top = mobile ? 594 : 62;
   const right = width - 30;
@@ -79,7 +80,7 @@ function render(mobile = false) {
   });
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
 <title id="title">Niladri Hazra — developer terminal</title>
-<desc id="desc">ASCII portrait of Niladri Hazra. Full-stack and mobile engineer in Kolkata, India. TypeScript, React, React Native, Bun, Postgres, and AI-agent workflows. ${n(user.public_repos)} public repositories, ${n(user.followers)} followers, ${n(stars)} stars on owned public repositories, ${n(prSearch.total_count)} public pull requests.</desc>
+<desc id="desc">ASCII portrait of Niladri Hazra. Full-stack and mobile engineer in Bangalore, India. Currently working at Runable (runable.com). TypeScript, React, React Native, Bun, Postgres, and AI-agent workflows. ${n(user.public_repos)} public repositories, ${n(user.followers)} followers, ${n(stars)} stars on owned public repositories, ${n(prSearch.total_count)} public pull requests.</desc>
 <rect width="100%" height="100%" rx="16" fill="#16191f"/>
 <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace">${art}${info}</g>
 </svg>\n`;
