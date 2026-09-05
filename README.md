@@ -1,6 +1,6 @@
 <picture>
-  <source media="(max-width: 700px)" srcset="./assets/profile-signal-mobile.svg" />
-  <img src="./assets/profile-signal.svg" alt="Niladri Hazra — full-stack and mobile engineer in Bangalore, currently working at Runable. Building with TypeScript, React, React Native, Bun, Postgres, and AI agents. ASCII portrait and live GitHub stats." width="100%" />
+  <source media="(max-width: 700px)" srcset="./assets/profile-signal-mobile.svg?v=bangalore-aligned-2" />
+  <img src="./assets/profile-signal.svg?v=bangalore-aligned-2" alt="Niladri Hazra — full-stack and mobile engineer in Bangalore, currently working at Runable. Building with TypeScript, React, React Native, Bun, Postgres, and AI agents. ASCII portrait and live GitHub stats." width="100%" />
 </picture>
 
 <p align="center">
