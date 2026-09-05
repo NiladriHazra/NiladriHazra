@@ -59,7 +59,9 @@ function render(mobile = false) {
   const right = width - 30;
   const text = (x,y,value,fill='#c9d1d9',size=16,extra='') => `<text x="${x}" y="${y}" fill="${fill}" font-size="${size}" ${extra}>${e(value)}</text>`;
   const portraitX = mobile ? 117 : 28;
-  const portraitY = mobile ? 54 : 46;
+  // Center the portrait against the complete text block, including live stats.
+  const textBottom = top + 38 + (rows.length - 1) * 21;
+  const portraitY = mobile ? 54 : (top - 13 + textBottom - (portrait.length - 1) * 13.2 + 10) / 2;
   let art = '';
   portrait.forEach((row,y) => row.forEach((pixel,x) => {
     if (pixel.c !== ' ') art += text(portraitX+x*7.5,portraitY+y*13.2,pixel.c,pixel.color,13);
@@ -74,8 +76,8 @@ function render(mobile = false) {
       info += `<path d="M${left+row.length*9.7+30} ${y-5} H${right}" stroke="#68717c"/>`;
     } else {
       info += text(left,y,row[0]+':','#ffad66');
-      info += text(left+140,y,'·'.repeat(Math.max(1,Math.floor((right-left-140-row[1].length*9.6)/9.6))),'#525c69');
-      info += text(right,y,row[1],'#a6cceb',16,'text-anchor="end"');
+      info += text(left+140,y,'···','#525c69');
+      info += text(left+184,y,row[1],'#a6cceb');
     }
   });
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
